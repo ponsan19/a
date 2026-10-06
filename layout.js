@@ -1,0 +1,2 @@
+export const metadata={title:"Video Downloader",description:"Resolve permitted public video sources"};
+export default function RootLayout({children}){return <html lang="ja"><body>{children}</body></html>}

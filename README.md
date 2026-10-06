@@ -1,16 +1,13 @@
-# Video Link Downloader
+# Video URL Downloader
+公開HTMLに露出している MP4 / HLS URL を検出する Next.js アプリです。
 
-権利を持つ動画、またはダウンロード許可された動画の直接ファイルURL向けの静的Webページです。
+## 起動
+npm install
+npm run dev
 
-## 使い方
-1. `index.html` をブラウザで開く
-2. `.mp4` / `.webm` などの直接動画URLを貼る
-3. 「確認」→「動画を保存」
-
-## 公開
-GitHub Pages / Netlify / Vercel などの静的ホスティングで公開できます。
+## Vercel
+このフォルダをGitHubへ置いてVercelにImportするだけでデプロイできます。
 
 ## 制限
-- 動画配信サイトのページURL解析は行いません
-- DRM / HLS / DASH / 認証回避には対応しません
-- クロスオリジン設定やブラウザ仕様によっては、「保存」ではなく動画が開く場合があります
+JavaScript実行後にのみ生成される動画URL、認証・DRM・アクセス制御の回避には対応しません。
+保存する権限がある動画だけに使用してください。
